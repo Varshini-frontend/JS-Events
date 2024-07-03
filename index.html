@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <label>Username</label>
+    <input type="text" id="user" class="user" value=""><br/>
+    <input type="button" value="Display" onclick="getInp()"><br/>
+
+    <label>Number</label>
+    <input type="number" id="num1" class="num1" value=""><br/>
+    <input type="number" id="num2" class="num2" value=""><br/>
+    <input type="submit" value="submit" onclick="useInp()"><br/>
+
+    <label>Input1</label>
+    <input type="text" id="in1" class="in1" value=""><br/>
+    <label>Input2</label>
+    <input type="text" id="in2" class="in2" value=""><br/>
+    <button type="button" onclick="validateInp()">Validate</button><br/>
+
+    
+    <input type="number" id="num1" placeholder="Enter first number">
+        <input type="number" id="num2" placeholder="Enter second number">
+        <button onclick="arithmetic()">Calculate</button>
+        <div id="results">
+            <p id="add"></p>
+            <p id="subtract"></p>
+            <p id="multiply"></p>
+            <p id="divide"></p>
+        </div>
+
+
+        <div class="container">
+            <input type="number" id="inputNumber" placeholder="Enter an integer">
+            <button onclick="select()">Add to List</button>
+            <select id="numberSelect" size="5">
+            </select>
+        </div>
+
+
+
+    <div class="container">
+            <h2>Input to Dropdown and List</h2>
+            <input type="text" id="inputValue" placeholder="Enter a value">
+            <button onclick="addToDropdown()">Add to Dropdown</button>
+            <select id="dropdown" onchange="listPreviousValues()">
+                <!-- Options will be added here -->
+            </select>
+            <div id="previousValues"></div>
+    </div>
+
+
+    <label>Username</label>
+    <input type="text" id="name" class="name" value=""><br/>
+    <label>DOB</label>
+    <input type="date" id="dob" class="dob" value=""><br/>
+    <input type="button" value="password" onclick="pass()"><br/>
+    <p div="result"></p>
+
+
+    <div class="contain">
+        <h2>Date Calculation</h2>
+        <label>Date</label>
+        <input type="date" id="inputDate" placeholder="Enter a date"><br/>
+        <br/>
+        <button onclick="calculateDates()">Calculate Dates</button><br/>
+        <label>Before Five Days</label>
+        <input type="text" id="minusFiveDays" placeholder="-5 Days" readonly><br/>
+        <label>After Five Days</label>
+        <input type="text" id="plusFiveDays" placeholder="+5 Days" readonly><br/>
+    </div>
+
+
+
+
+
+    <script src="./demo.js"></script>
+</body>
+</html>
